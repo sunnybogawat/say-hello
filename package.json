@@ -1,6 +1,6 @@
 {
-  "name": "say-hello",
-  "version": "1.0.0",
+  "name": "say-hello-pune",
+  "version": "1.0.1",
   "description": "A react component for testing npm distribution.",
   "main": "dist/hello.js",
   "scripts": {
