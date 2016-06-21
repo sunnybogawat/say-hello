@@ -20,7 +20,8 @@ module.exports = {
     library: 'hello',
     libraryTarget: 'umd',
     externals: {
-        react: 'react',
+        'react': 'react',
+        'react-dom' : 'ReactDOM'
     }
   },
 };
