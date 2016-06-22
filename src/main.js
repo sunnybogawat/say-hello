@@ -3,9 +3,15 @@ import About from './about.js';
 import Alert from './alert.js';
 
 // ReactDOM.render(
-//   <Alert errorMsg={"I am Sunny Bogawat!"}>
-//   <div>this is from loader</div>
-//   </Alert>, document.getElementById('hello')
+//   <Hello/>, document.getElementById('hello')
+// );
+
+// ReactDOM.render(
+//   <Alert errorMsg={"I am Sunny Bogawat!"}/>, document.getElementById('hello')
+// );
+
+// ReactDOM.render(
+//   <About name={"About Component"} version={"1.0"}/>, document.getElementById('hello')
 // );
 
 
