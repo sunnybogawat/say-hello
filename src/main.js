@@ -1,4 +1,4 @@
-module.exports = {
-    Hello: './hello.js',
-    Alert: './alert.js'
-}
+
+export Hello from './Hello';
+export Alert from './Alert';
+

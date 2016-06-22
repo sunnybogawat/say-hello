@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: ["./src/main.js"]
+   'say-hello': './src/main.js'
   },
   module: {
     loaders: [
