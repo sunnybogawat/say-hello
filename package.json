@@ -2,7 +2,7 @@
   "name": "say-hello-pune",
   "version": "1.1.0",
   "description": "A react component for testing npm distribution.",
-  "main": "dist/hello.js",
+  "main": "./dist/say-hello.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "webpack-dev-server --progress --colors --hot",
@@ -29,3 +29,6 @@
     "url": "https://github.com/sunnybogawat/say-hello"
   }
 }
+
+
+

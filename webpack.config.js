@@ -17,12 +17,12 @@ module.exports = {
   },
   output: {
     path: __dirname + "/dist",
-    filename: "hello.js",
-    library: 'hello',
+    filename: "say-hello.js",
+    library: 'say-hello',
     libraryTarget: 'umd',
     externals: {
-        'react': 'react',
-        'react-dom' : 'ReactDOM'
+       react: 'react',
+       ReactDOM: 'ReactDOM'
     }
   },
 };
