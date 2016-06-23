@@ -16,7 +16,9 @@ class Awesome extends React.Component {
 
   onUnLike () {
     let newLikesCount = this.state.likesCount - 1;
-    this.setState({likesCount: newLikesCount});
+    if(newLikesCount > -1 ) {
+      this.setState({likesCount: newLikesCount});
+    }
   }
 
   render() {
