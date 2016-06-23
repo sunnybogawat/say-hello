@@ -13,11 +13,17 @@ class Awesome extends React.Component {
     this.setState({likesCount: newLikesCount});
   }
 
+  onUnLike () {
+    let newLikesCount = this.state.likesCount - 1;
+    this.setState({likesCount: newLikesCount});
+  }
+
   render() {
     return (
       <div>
-        Likes : <span>{this.state.likesCount}</span>
-        <div><button onClick={this.onLike}>Like Me</button></div>
+        Total Likes : <span>{this.state.likesCount}</span>
+        <div><button onClick={this.onLike}>Like</button></div>
+        <div><button onClick={this.onUnLike}>UnLike</button></div>
       </div>
     );
   }

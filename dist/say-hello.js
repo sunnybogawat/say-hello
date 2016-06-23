@@ -4417,12 +4417,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.setState({ likesCount: newLikesCount });
 	    }
 	  }, {
+	    key: 'onUnLike',
+	    value: function onUnLike() {
+	      var newLikesCount = this.state.likesCount - 1;
+	      this.setState({ likesCount: newLikesCount });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        'Likes : ',
+	        'Total Likes : ',
 	        _react2.default.createElement(
 	          'span',
 	          null,
@@ -4434,7 +4440,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _react2.default.createElement(
 	            'button',
 	            { onClick: this.onLike },
-	            'Like Me'
+	            'Like'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: this.onUnLike },
+	            'UnLike'
 	          )
 	        )
 	      );
