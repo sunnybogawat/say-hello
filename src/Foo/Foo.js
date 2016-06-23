@@ -9,11 +9,10 @@ class Foo extends React.Component {
   render() {
     return (
       <div>
-          <span>Hello Mr.{this.props.errorMsg}. I am the foo component.</span>
+          <span>Hello Mr.{this.props.name}. I am the foo component.</span>
       </div>
     );
   }
-
 }
 Foo.propTypes = { name: React.PropTypes.string};
 export default Foo;

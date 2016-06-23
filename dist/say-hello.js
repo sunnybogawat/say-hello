@@ -4427,7 +4427,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          'span',
 	          null,
 	          'Hello Mr.',
-	          this.props.errorMsg,
+	          this.props.name,
 	          '. I am the foo component.'
 	        )
 	      );
