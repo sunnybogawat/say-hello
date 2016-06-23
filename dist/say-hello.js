@@ -59,7 +59,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.Alert = exports.Hello = undefined;
+	exports.Awesome = exports.Alert = exports.Hello = undefined;
 
 	var _Hello2 = __webpack_require__(1);
 
@@ -69,10 +69,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Alert3 = _interopRequireDefault(_Alert2);
 
+	var _Awesome2 = __webpack_require__(40);
+
+	var _Awesome3 = _interopRequireDefault(_Awesome2);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.Hello = _Hello3.default;
 	exports.Alert = _Alert3.default;
+	exports.Awesome = _Awesome3.default;
 
 /***/ },
 /* 1 */
@@ -104,40 +109,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	  function Hello(props) {
 	    _classCallCheck(this, Hello);
 
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Hello).call(this, props));
-
-	    _this.state = { likesCount: 0 };
-	    _this.onLike = _this.onLike.bind(_this);
-	    return _this;
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Hello).call(this, props));
 	  }
 
 	  _createClass(Hello, [{
-	    key: 'onLike',
-	    value: function onLike() {
-	      var newLikesCount = this.state.likesCount + 1;
-	      this.setState({ likesCount: newLikesCount });
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        'Likes : ',
-	        _react2.default.createElement(
-	          'span',
-	          null,
-	          this.state.likesCount
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'button',
-	            { onClick: this.onLike },
-	            'Like Me'
-	          )
-	        )
+	        '"Hello From Pune!"'
 	      );
 	    }
 	  }]);
@@ -4373,6 +4354,97 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	Alert.propTypes = { errorMsg: _react2.default.PropTypes.string };
 	exports.default = Alert;
+
+/***/ },
+/* 40 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _Awesome = __webpack_require__(41);
+
+	var _Awesome2 = _interopRequireDefault(_Awesome);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _Awesome2.default;
+
+/***/ },
+/* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Awesome = function (_React$Component) {
+	  _inherits(Awesome, _React$Component);
+
+	  function Awesome(props) {
+	    _classCallCheck(this, Awesome);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Awesome).call(this, props));
+
+	    _this.state = { likesCount: 0 };
+	    _this.onLike = _this.onLike.bind(_this);
+	    return _this;
+	  }
+
+	  _createClass(Awesome, [{
+	    key: 'onLike',
+	    value: function onLike() {
+	      var newLikesCount = this.state.likesCount + 1;
+	      this.setState({ likesCount: newLikesCount });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        'Likes : ',
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          this.state.likesCount
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: this.onLike },
+	            'Like Me'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Awesome;
+	}(_react2.default.Component);
+
+	exports.default = Awesome;
 
 /***/ }
 /******/ ])
