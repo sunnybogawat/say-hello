@@ -6,6 +6,7 @@ class Awesome extends React.Component {
     super(props);
     this.state = {likesCount : 0};
     this.onLike = this.onLike.bind(this);
+    this.onUnLike = this.onUnLike.bind(this);
   }
 
   onLike () {
